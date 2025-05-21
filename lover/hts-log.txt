@@ -1,0 +1,26 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 21 May 2025 14:25:25 at https://matheuscopini.com/lover +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://matheuscopini.com/lover -O1 "C:\Users\laura\Downloads\LOVER" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:25:37	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://matheuscopini.com/lover)
+14:25:40	Error: 	"Not Found" (404) at link https://matheuscopini.com/"https://scripts.converteai.net/lib/js/smartplayer/v1/sdk.min.js" (from https://matheuscopini.com/lover)
+14:25:40	Error: 	"Not Found" (404) at link https://matheuscopini.com/"https://scripts.converteai.net/5f17231f-71e1-4132-993b-4e3925deda44/players/67266681a905e5000bea30be/embed.html" (from https://matheuscopini.com/lover)
+14:25:40	Error: 	"Not Found" (404) at link https://matheuscopini.com/"https://scripts.converteai.net/5f17231f-71e1-4132-993b-4e3925deda44/players/681e18fa9f3dfef20b382bb2/embed.html" (from https://matheuscopini.com/lover)
+14:25:41	Error: 	"Not Found" (404) at link https://matheuscopini.com/politicas-a-cupula/polÃ­tica-de-cookies (from https://matheuscopini.com/lover)
+14:25:41	Error: 	"Not Found" (404) at link https://matheuscopini.com/a (from https://connect.facebook.net/en_US/fbevents.js)
+14:25:41	Error: 	"Not Found" (404) at link https://matheuscopini.com/POST (from https://connect.facebook.net/en_US/fbevents.js)
+14:25:41	Error: 	"Not Found" (404) at link https://matheuscopini.com/schema.org/ (from https://connect.facebook.net/en_US/fbevents.js)
+14:25:44	Error: 	"Not Found" (404) at link https://matheuscopini.com/b.resolvedLink (from https://connect.facebook.net/en_US/fbevents.js)
+14:25:44	Error: 	"Not Found" (404) at link https://matheuscopini.com/d (from https://connect.facebook.net/en_US/fbevents.js)
+14:25:44	Error: 	"Not Found" (404) at link https://matheuscopini.com/signals/iwl.js (from https://connect.facebook.net/en_US/fbevents.js)
+14:25:44	Error: 	"Not Found" (404) at link https://matheuscopini.com/c.dl (from https://connect.facebook.net/en_US/fbevents.js)
+14:25:44	Error: 	"Not Found" (404) at link https://matheuscopini.com/c.rl (from https://connect.facebook.net/en_US/fbevents.js)
+14:25:54	Error: 	"Not Found" (404) at link https://matheuscopini.com/campanhas/masterclass (from https://matheuscopini.com/)
+14:25:57	Error: 	"Not Found" (404) at link https://matheuscopini.com/links (from https://matheuscopini.com/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 32 seconds : 106 links scanned, 90 files written (28863361 bytes overall) [26470045 bytes received at 827188 bytes/sec], 2932340 bytes transferred using HTTP compression in 9 files, ratio 10%, 3.4 requests per connection
+(15 errors, 0 warnings, 0 messages)
