@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                                <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>artifinsider</title>
+
+    <meta property="og:title" content="artifinsider" />
+    <meta property="og:description" content="Any knowledge is not necessary. AI will do everything for you" />
+
+    <style>.iti{width:100%}
+</style>
+  
+        <script src="/plugins/intl-tel-input/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="/plugins/intl-tel-input/intlTelInput.css">
+
+    <script defer src="/plugins/alpine/collapse.min.js"></script>
+
+    <link rel="preload" as="style" href="https://artifinsider.com/build/assets/app-DVUGuhge.css" /><link rel="modulepreload" href="https://artifinsider.com/build/assets/app-CJKyRzZD.js" /><link rel="modulepreload" href="https://artifinsider.com/build/assets/jquery-BoIA6lE9.js" /><link rel="stylesheet" href="https://artifinsider.com/build/assets/app-DVUGuhge.css" data-navigate-track="reload" /><script type="module" src="https://artifinsider.com/build/assets/app-CJKyRzZD.js" data-navigate-track="reload"></script>
+    <link rel="preload" as="style" href="https://artifinsider.com/build/assets/app-DVUGuhge.css" /><link rel="modulepreload" href="https://artifinsider.com/build/assets/app-CJKyRzZD.js" /><link rel="modulepreload" href="https://artifinsider.com/build/assets/jquery-BoIA6lE9.js" /><link rel="stylesheet" href="https://artifinsider.com/build/assets/app-DVUGuhge.css" data-navigate-track="reload" /><script type="module" src="https://artifinsider.com/build/assets/app-CJKyRzZD.js" data-navigate-track="reload"></script><!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}</style>
+</head>
+<body>
+            
+    <main class="main">
+        <div wire:snapshot="{&quot;data&quot;:{&quot;parts&quot;:[[&quot;header&quot;,&quot;video-player&quot;,&quot;main-form&quot;,&quot;process&quot;,&quot;reviews&quot;,&quot;cta&quot;,&quot;footer&quot;],{&quot;s&quot;:&quot;arr&quot;}],&quot;step&quot;:1,&quot;isPartsSet&quot;:true,&quot;preloader&quot;:&quot;preloader.NG-1&quot;,&quot;template&quot;:&quot;neon-grid&quot;,&quot;showIframe&quot;:false},&quot;memo&quot;:{&quot;id&quot;:&quot;L7m01gy4m1gV8zDN6V5c&quot;,&quot;name&quot;:&quot;app&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:{&quot;lw-3084795784-1&quot;:[&quot;div&quot;,&quot;JIxm5lxc9Dn0VZobaTum&quot;],&quot;part-1-video-player&quot;:[&quot;div&quot;,&quot;2f6nNwQhRMS6BHVeD8OS&quot;],&quot;part-2-main-form&quot;:[&quot;div&quot;,&quot;81GiS7wOUMLB9qsuWgmt&quot;],&quot;part-6-footer&quot;:[&quot;div&quot;,&quot;sMW850ekTc8fS1veiSRo&quot;]},&quot;scripts&quot;:[&quot;3084795784-0&quot;],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;f542d38d6b261c1199abc036d330c0c7718bb27736a4558bca9e71a528741c10&quot;}" wire:effects="{&quot;scripts&quot;:{&quot;3084795784-0&quot;:&quot;&lt;script&gt;\n    Alpine.store(&#039;app&#039;, {\n        preloader: true,\n        canHidePreloader: {},\n        modal: {},\n        showOfferLink: false,\n        showFaq: false,\n        showIframe: $wire.showIframe,\n        showContent: false,\n        openModal(name) {\n            this.modal[name] = true;\n            document.body.style.overflowY = &#039;hidden&#039;;\n        },\n        closeModal(name) {\n            this.modal[name] = false;\n            document.body.style.overflowY = &#039;auto&#039;;\n        },\n        openIframe() {\n            this.showIframe = true;\n            document.body.style.overflowY = &#039;hidden&#039;;\n            document.body.style.overflowX = &#039;hidden&#039;;\n            $wire.openIframe();\n        },\n    })\n    Alpine.data(&#039;app&#039;, () =&gt; ({\n        step: $wire.step,\n        isPartsSet: $wire.entangle(&#039;isPartsSet&#039;).live,\n        componentReady: {},\n        componentsReady: false,\n        init() {\n            if (this.componentsReady &amp;&amp; this.isPartsSet) {\n                this.hidePreloader();\n            }\n            $watch(&#039;componentsReady&#039;, value =&gt; {\n                if (value) {\n                    this.hidePreloader();\n                }\n            });\n            let checkReadyInterval = setInterval(() =&gt; {\n                if (!this.isPartsSet) {\n                    return;\n                }\n                let componentsReady = true;\n                for (let key in this.componentReady) {\n                    if (!this.componentReady[key]) {\n                        componentsReady = false;\n                        break;\n                    }\n                }\n                this.componentsReady = componentsReady;\n                if (componentsReady) {\n                    clearInterval(checkReadyInterval);\n                }\n            }, 500);\n            \/\/ this.troubleChecker();\n            if ($store.app.showIframe) {\n                $store.app.openIframe();\n            }\n        },\n        hidePreloader() {\n            setTimeout(() =&gt; {\n                $store.app.preloader = false;\n\n                if (document.querySelector(&#039;.reviews-carousel&#039;)) {\n                    new Flickity(&#039;.reviews-carousel&#039;, {\n                        autoPlay: true,\n                        wrapAround: true,\n                        prevNextButtons: false,\n                    });\n                }\n\n                if (document.querySelector(&#039;.metrics-carousel&#039;)) {\n                    new Flickity(&#039;.metrics-carousel&#039;, {\n                        autoPlay: true,\n                        wrapAround: true,\n                        prevNextButtons: false,\n                        pageDots: false,\n                    });\n                }\n            }, 1000);\n        },\n        currency(value) {\n            return new Intl.NumberFormat(&#039;en-US&#039;, { style: &#039;currency&#039;, currency: &#039;USD&#039;, minimumFractionDigits: 0 }).format(value);\n        },\n        troubleChecker() {\n            let timer = 0;\n            let sent = false;\n            let troubleCheckerInterval = setInterval(() =&gt; {\n                timer += 5;\n                if (timer &gt;= 20) {\n                    if (!this.isPartsSet) {\n                        $wire.troubleReport(timer+\&quot;s: Parts not set\&quot;);\n                    }\n                    if (!this.componentsReady) {\n                        $wire.troubleReport(timer+\&quot;s: Components are not ready\&quot;,{componentReady: this.componentReady});\n                    }\n                    clearInterval(troubleCheckerInterval);\n                }\n            }, 5000);\n        },\n    }));\n&lt;\/script&gt;\n    &quot;},&quot;listeners&quot;:[&quot;set-funnel&quot;,&quot;next-step&quot;,&quot;trouble-report&quot;]}" wire:id="L7m01gy4m1gV8zDN6V5c" x-data="app">
+    <!--[if BLOCK]><![endif]-->        <link rel="preload" as="style" href="https://artifinsider.com/build/assets/neon-grid-DNjGRYwR.css" /><link rel="modulepreload" href="https://artifinsider.com/build/assets/neon-grid-Bj3m3Gcs.js" /><link rel="stylesheet" href="https://artifinsider.com/build/assets/neon-grid-DNjGRYwR.css" data-navigate-track="reload" /><script type="module" src="https://artifinsider.com/build/assets/neon-grid-Bj3m3Gcs.js" data-navigate-track="reload"></script>    <!--[if ENDBLOCK]><![endif]-->
+    <div wire:ignore>
+        <!--[if BLOCK]><![endif]-->                <div wire:snapshot="{&quot;data&quot;:{&quot;data&quot;:[{&quot;domain&quot;:&quot;b.artifinsider.com&quot;,&quot;clickid&quot;:&quot;90da616sydvoj905&quot;,&quot;lander&quot;:&quot;591&quot;,&quot;country&quot;:&quot;Brazil&quot;,&quot;country_code&quot;:&quot;BR&quot;,&quot;uclick&quot;:&quot;16p2fvh9&quot;,&quot;uclickhash&quot;:&quot;16p2fvh9-16sydvoj-9rdz-0-bzg6-sck2-scxo-9296ef&quot;},{&quot;s&quot;:&quot;arr&quot;}],&quot;isDataSet&quot;:true,&quot;uclick&quot;:&quot;16p2fvh9&quot;,&quot;offerLink&quot;:&quot;https:\/\/b.artifinsider.com\/?lp=1&amp;fn=&amp;ln=&amp;em=&amp;uclick=16p2fvh9&quot;,&quot;campaign_link&quot;:&quot;https:\/\/b.artifinsider.com\/?key=d9tj0axunrnhbww1mqyt&quot;,&quot;campaign_domain&quot;:&quot;b.artifinsider.com&quot;},&quot;memo&quot;:{&quot;id&quot;:&quot;JIxm5lxc9Dn0VZobaTum&quot;,&quot;name&quot;:&quot;tracker.binom&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[&quot;2789340949-0&quot;],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;dc0c2f93bd5dd5a4f2500e0582cd2a76088d388a241b3123d0ab93460861cb31&quot;}" wire:effects="{&quot;scripts&quot;:{&quot;2789340949-0&quot;:&quot;&lt;script&gt;\n    Alpine.store(&#039;tr&#039;, {\n        offerLink: &#039;&#039;,\n    })\n    Alpine.data(&#039;tr&#039;, () =&gt; ({\n        uclick: $wire.uclick,\n        isDataSet: $wire.isDataSet,\n        offerLink: $wire.offerLink,\n        init() {\n            if (this.isDataSet) {\n                $store.tr.offerLink = this.offerLink;\n            } else {\n                this.setData();\n            }\n        },\n        setOfferLink() {\n            $store.tr.offerLink = $wire.offerLink;\n        },\n        setData() {\n            setTimeout(() =&gt; {\n                if (window.pixelTokens !== undefined) {\n                    $wire.setPixelTokens(window.pixelTokens);\n                    this.isDataSet = true;\n                    this.uclick = window.pixelTokens.uclick;\n                    setTimeout(() =&gt; {\n                        this.setOfferLink();\n                    }, 2000);\n                }\n                if (this.isDataSet) {\n                    $wire.setFunnel();\n                } else {\n                    this.setData();\n                }\n            }, 500);\n        }\n    }));\n&lt;\/script&gt;\n    &quot;}}" wire:id="JIxm5lxc9Dn0VZobaTum" x-data="tr">
+    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+</div>
+
+                    <!--[if ENDBLOCK]><![endif]-->
+    </div>
+    <section x-show="$store.app.preloader"
+         x-transition:leave="transition ease-in-out duration-300"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+         class="preloader preloader--NG-1"
+>
+    <div class="preloader__wrapper">
+        <svg  class="preloader__icon preloader__icon--NG-1 " viewBox="0 0 200 200"><circle fill="currentColor" stroke="currentColor" stroke-width="15" r="15" cx="40" cy="100"><animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.4"/></circle><circle fill="currentColor" stroke="currentColor" stroke-width="15" r="15" cx="100" cy="100"><animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.2"/></circle><circle fill="currentColor" stroke="currentColor" stroke-width="15" r="15" cx="160" cy="100"><animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="0"/></circle></svg>
+    </div>
+</section>
+    <!--[if BLOCK]><![endif]-->        <header>
+    <div class="top-gradient">
+        <div class="top-gradient__content"></div>
+    </div>
+</header>
+            <div wire:snapshot="{&quot;data&quot;:{&quot;isMulti&quot;:true,&quot;aspectRatio&quot;:[{&quot;d&quot;:[{&quot;w&quot;:&quot;16&quot;,&quot;h&quot;:&quot;9&quot;},{&quot;s&quot;:&quot;arr&quot;}],&quot;m&quot;:[{&quot;w&quot;:&quot;16&quot;,&quot;h&quot;:&quot;9&quot;},{&quot;s&quot;:&quot;arr&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],&quot;video&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}],&quot;views&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}],&quot;versions&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}],&quot;components&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}],&quot;settings&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}],&quot;showHiddenContentAfter&quot;:0,&quot;checkpoints&quot;:[{&quot;A&quot;:10},{&quot;s&quot;:&quot;arr&quot;}],&quot;customControls&quot;:true,&quot;name&quot;:&quot;video-player&quot;,&quot;partKey&quot;:1,&quot;livewireVersion&quot;:&quot;1&quot;,&quot;viewVersion&quot;:&quot;0&quot;,&quot;template&quot;:&quot;neon-grid&quot;,&quot;viewComponent&quot;:&quot;templates.neon-grid.video-player.video-player-0&quot;,&quot;livewireComponent&quot;:&quot;livewire.video-player.1&quot;,&quot;data&quot;:[{&quot;multi&quot;:true,&quot;parts&quot;:[[[{&quot;name&quot;:&quot;main&quot;,&quot;view&quot;:&quot;0&quot;,&quot;video&quot;:[{&quot;d&quot;:&quot;\/video\/INS_part_1_H.mp4&quot;,&quot;m&quot;:&quot;\/video\/INS_part_1_H.mp4&quot;},{&quot;s&quot;:&quot;arr&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;name&quot;:&quot;disclaimer&quot;,&quot;view&quot;:&quot;0&quot;,&quot;video&quot;:[{&quot;d&quot;:&quot;\/video\/NG_h_disclaimer_d.mp4&quot;,&quot;m&quot;:&quot;\/video\/NG_h_disclaimer_m.mp4&quot;},{&quot;s&quot;:&quot;arr&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;name&quot;:&quot;preview&quot;,&quot;view&quot;:&quot;0&quot;,&quot;video&quot;:[{&quot;d&quot;:&quot;\/video\/INS_preview_part_1_H.mp4&quot;,&quot;m&quot;:&quot;\/video\/INS_preview_part_1_H.mp4&quot;},{&quot;s&quot;:&quot;arr&quot;}]},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;checkpoints&quot;:[{&quot;A&quot;:10},{&quot;s&quot;:&quot;arr&quot;}],&quot;aspect_ratio&quot;:[{&quot;d&quot;:&quot;16:9&quot;,&quot;m&quot;:&quot;16:9&quot;},{&quot;s&quot;:&quot;arr&quot;}],&quot;custom_controls&quot;:true},{&quot;s&quot;:&quot;arr&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;2f6nNwQhRMS6BHVeD8OS&quot;,&quot;name&quot;:&quot;video-player&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[&quot;394581845-0&quot;],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;5f2793d7d7f6087f6f094233b5724d48d1457ec51290c88666f0730db6a2805c&quot;}" wire:effects="{&quot;scripts&quot;:{&quot;394581845-0&quot;:&quot;&lt;script&gt;\n    Alpine.store(&#039;videoPlayer&#039;, {\n        checkpoints: {}\n    });\n    Alpine.data(&#039;videoPlayer&#039;, () =&gt; ({\n        aspectRatio: $wire.aspectRatio,\n        isMulti: $wire.isMulti,\n        checkpoints: $wire.checkpoints,\n        customControls: $wire.customControls,\n        show: {\n            preview: false,\n            disclaimer: false,\n            main: false,\n            watching: false,\n            overlay: false,\n        },\n        video: {},\n        play: false,\n        paused: true,\n        muted: false,\n        watching: 12,\n        showWatching: false,\n        watchedPercent: 0,\n\n        init() {\n            window.videoPlayer = this;\n\n            this.componentReady.videoPlayer = false;\n\n            if (this.isMulti) {\n                if (window.innerWidth &lt;= 640) {\n                    $wire.setComponents(&#039;m&#039;);\n                    this.aspectRatio = this.aspectRatio.m;\n                } else {\n                    $wire.setComponents(&#039;d&#039;);\n                    this.aspectRatio = this.aspectRatio.d;\n                }\n            }\n\n            this.setCheckpoints();\n\n            window.addEventListener(&#039;components-loaded&#039;, (event) =&gt; {\n                setTimeout(() =&gt; {\n                    window.addEventListener(&#039;resize&#039;, () =&gt; {\n                        this.adjustVideoSize();\n                    });\n                    this.setComponentsData();\n                    this.adjustVideoSize();\n                    this.startWatchingIncrement();\n                    this.componentReady.videoPlayer = true;\n                }, 1000);\n            });\n\n            this.$watch(&#039;play&#039;, value =&gt; {\n                if (value) {\n                    this.show.preview = false;\n                    this.paused = false;\n                    if (this.video.disclaimer !== undefined) {\n                        this.playDisclaimer();\n                    } else {\n                        this.playMainVideo();\n                    }\n                }\n            });\n        },\n\n        setCheckpoints() {\n            for(let name in this.checkpoints) {\n                $store.videoPlayer.checkpoints[name] = false;\n            }\n        },\n\n        adjustVideoSize() {\n            const videoContainer = this.$refs.container;\n            const videoWrapper = this.$refs.wrapper;\n            const videoFrame = this.$refs.frame;\n\n            const windowWidth = document.body.clientWidth;\n            const windowHeight = window.innerHeight;\n\n            const videoContainerStyles = window.getComputedStyle(videoContainer);\n            const videoWrapperStyles = window.getComputedStyle(videoWrapper);\n\n            const maxVideoHeight = windowHeight - parseInt(videoContainerStyles.getPropertyValue(&#039;padding-top&#039;)) - parseInt(videoContainerStyles.getPropertyValue(&#039;padding-bottom&#039;)) - parseInt(videoWrapperStyles.getPropertyValue(&#039;padding-top&#039;)) - parseInt(videoWrapperStyles.getPropertyValue(&#039;padding-bottom&#039;)) - parseInt(videoContainerStyles.getPropertyValue(&#039;border-top-width&#039;)) - parseInt(videoContainerStyles.getPropertyValue(&#039;border-bottom-width&#039;)) - parseInt(videoWrapperStyles.getPropertyValue(&#039;border-top-width&#039;)) - parseInt(videoWrapperStyles.getPropertyValue(&#039;border-bottom-width&#039;));\n\n            const maxVideoWidth = windowWidth - parseInt(videoContainerStyles.getPropertyValue(&#039;padding-left&#039;)) - parseInt(videoContainerStyles.getPropertyValue(&#039;padding-right&#039;)) - parseInt(videoWrapperStyles.getPropertyValue(&#039;padding-left&#039;)) - parseInt(videoWrapperStyles.getPropertyValue(&#039;padding-right&#039;)) - parseInt(videoContainerStyles.getPropertyValue(&#039;border-left-width&#039;)) - parseInt(videoContainerStyles.getPropertyValue(&#039;border-right-width&#039;)) - parseInt(videoWrapperStyles.getPropertyValue(&#039;border-left-width&#039;)) - parseInt(videoWrapperStyles.getPropertyValue(&#039;border-right-width&#039;));\n\n            const videoAspectRatio = this.aspectRatio.w \/ this.aspectRatio.h;\n\n            let videoWidth = maxVideoWidth;\n            let videoHeight = videoWidth \/ videoAspectRatio;\n\n            if (videoHeight &gt; windowHeight &amp;&amp; !((window.videoPlayer.aspectRatio.h &gt; window.videoPlayer.aspectRatio.w) &amp;&amp; (windowHeight &gt; windowWidth))) {\n                videoHeight = maxVideoHeight;\n                videoWidth = videoHeight * videoAspectRatio;\n            }\n\n            videoFrame.style.width = `${videoWidth}px`;\n            videoFrame.style.height = `${videoHeight}px`;\n        },\n\n        startWatchingIncrement() {\n            this.show.watching = true;\n            setInterval(() =&gt; {\n                this.watching += Math.floor(Math.random() * 3);\n            }, 3000);\n        },\n\n        setComponentsData() {\n            if (this.$refs.preview !== undefined) {\n                this.show.preview = true;\n                this.video.preview = this.$refs.preview;\n                this.video.preview.addEventListener(&#039;playing&#039;, () =&gt; {\n                    this.show.overlay = true;\n                });\n            }\n            if (this.$refs.disclaimer !== undefined) {\n                this.video.disclaimer = this.$refs.disclaimer;\n                this.video.disclaimer.addEventListener(&#039;pause&#039;, () =&gt; {\n                    this.paused = true;\n                });\n                this.video.disclaimer.addEventListener(&#039;play&#039;, () =&gt; {\n                    this.paused = false;\n                });\n            }\n            if (this.$refs.main !== undefined) {\n                this.video.main = this.$refs.main;\n                this.video.main.addEventListener(&#039;loadedmetadata&#039;, () =&gt; {\n                    window.mainVideo = this.video.main;\n                    this.checkpoints.finished = this.video.main.duration - 5;\n                    $store.videoPlayer.checkpoints.finished = false;\n                });\n                this.video.main.addEventListener(&#039;pause&#039;, () =&gt; {\n                    this.paused = true;\n                });\n                this.video.main.addEventListener(&#039;play&#039;, () =&gt; {\n                    this.paused = false;\n                });\n                this.video.main.addEventListener(&#039;timeupdate&#039;, () =&gt; {\n                    if (this.customControls) {\n                        this.watchedPercent = (1 - Math.exp(-0.05 * (this.video.main.currentTime \/ this.video.main.duration * 100))) * 100;\n                    }\n                    for(let name in this.checkpoints) {\n                        if (this.video.main.currentTime &gt;= this.checkpoints[name]) {\n                            $store.videoPlayer.checkpoints[name] = true;\n                        }\n                    }\n                });\n            }\n        },\n\n        togglePlay(component) {\n            if (this.video[component].paused) {\n                this.video[component].play();\n            } else {\n                this.video[component].pause();\n            }\n        },\n\n        toggleMute(component) {\n            this.video[component].muted = !this.video[component].muted;\n            this.muted = this.video[component].muted;\n        },\n\n        playDisclaimer() {\n            this.show.preview = false;\n            this.show.disclaimer = true;\n            this.video.disclaimer.play();\n            this.video.disclaimer.addEventListener(&#039;ended&#039;, () =&gt; {\n                this.show.disclaimer = false;\n                this.playMainVideo();\n            });\n        },\n\n        playMainVideo() {\n            this.show.preview = false;\n            this.show.disclaimer = false;\n            this.show.main = true;\n            this.video.main.play();\n        },\n    }));\n&lt;\/script&gt;\n    &quot;}}" wire:id="2f6nNwQhRMS6BHVeD8OS" x-data="videoPlayer">
+    <section class="video-player">
+    <div x-ref="container" class="container video-player__container">
+        <div x-ref="wrapper" class="video-player__wrapper">
+            <div x-ref="frame" class="video-player__frame">
+                <div class="video-player__frame-item video-player__loading">
+                    <p class="video-player__loading-text">The video is loading <br>Please, wait</p>
+                    <svg  class="video-player__loading-icon " viewBox="0 0 200 200"><circle fill="currentColor" stroke="currentColor" stroke-width="15" r="15" cx="40" cy="100"><animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.4"/></circle><circle fill="currentColor" stroke="currentColor" stroke-width="15" r="15" cx="100" cy="100"><animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.2"/></circle><circle fill="currentColor" stroke="currentColor" stroke-width="15" r="15" cx="160" cy="100"><animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="0"/></circle></svg>
+                </div>
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+                <div wire:snapshot="{&quot;data&quot;:{&quot;showForm&quot;:false,&quot;user&quot;:[{&quot;fn&quot;:&quot;&quot;,&quot;ln&quot;:&quot;&quot;,&quot;em&quot;:&quot;&quot;,&quot;ph&quot;:&quot;&quot;,&quot;tc&quot;:false},{&quot;s&quot;:&quot;arr&quot;}],&quot;country&quot;:&quot;US&quot;,&quot;countries&quot;:[[&quot;US&quot;,&quot;CA&quot;],{&quot;s&quot;:&quot;arr&quot;}],&quot;name&quot;:&quot;main-form&quot;,&quot;partKey&quot;:2,&quot;livewireVersion&quot;:&quot;0&quot;,&quot;viewVersion&quot;:&quot;0-S&quot;,&quot;template&quot;:&quot;neon-grid&quot;,&quot;viewComponent&quot;:&quot;templates.neon-grid.main-form.main-form-0-S&quot;,&quot;livewireComponent&quot;:&quot;livewire.main-form.0&quot;,&quot;data&quot;:[{&quot;intl-tel-input&quot;:[{&quot;onlyCountries&quot;:[[&quot;US&quot;,&quot;CA&quot;],{&quot;s&quot;:&quot;arr&quot;}],&quot;excludeCountries&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}],&quot;separateDialCode&quot;:true,&quot;preferredCountries&quot;:[[&quot;US&quot;],{&quot;s&quot;:&quot;arr&quot;}]},{&quot;s&quot;:&quot;arr&quot;}]},{&quot;s&quot;:&quot;arr&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;81GiS7wOUMLB9qsuWgmt&quot;,&quot;name&quot;:&quot;main-form&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[&quot;121318181-0&quot;,&quot;1864698298-0&quot;],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;81146e1f2b576670ef0f8a1f4849aec08273cfd09cbbd484c6f2ac8f653b8a3c&quot;}" wire:effects="{&quot;scripts&quot;:{&quot;121318181-0&quot;:&quot;    &lt;script&gt;\n    Alpine.data(&#039;mainForm&#039;, () =&gt; ({\n        showSpots: false,\n        showForm: Alpine.store(&#039;mainForm&#039;).showForm,\n        totalSpots: 10,\n        spotsValue: 10,\n        spots: [],\n        spotClasses: {\n            taken: &#039;spots-counter__spot--taken&#039;,\n            free: &#039;&#039;,\n        },\n        init() {\n            for (let i = 0; i &lt; this.totalSpots; i++) {\n                this.spots.push({\n                    id: i,\n                    status: &#039;&#039;,\n                    class: &#039;&#039;,\n                });\n            }\n        },\n        checkAvailability() {\n            this.showSpots = true;\n            this.startSpotsCounter();\n        },\n        startSpotsCounter() {\n            this.takeSpot(0);\n        },\n        takeSpot(index) {\n            const timeout = 1000 * (1 + Math.random())\n\n            setTimeout(() =&gt; {\n                if (index &lt; 4) {\n                    this.spots[index].status = &#039;taken&#039;;\n                    this.spots[index].class = this.spotClasses.taken;\n                    index++;\n                    this.spotsValue--;\n                    this.takeSpot(index);\n                } else {\n                    for (let i = index; i &lt; this.totalSpots; i++) {\n                        setTimeout(() =&gt; {\n                            this.spots[i].status = &#039;free&#039;;\n                            this.spots[i].class = this.spotClasses.free;\n                        }, i * 200)\n                    }\n                    this.showForm = true;\n                    this.decreaseSpotsCount();\n                }\n            }, timeout)\n        },\n        decreaseSpotsCount() {\n            let initialTimeout = 3000;\n\n            const updateSpotsCount = (timeout) =&gt; {\n                if (this.spotsValue &lt;= 5) {\n                    timeout = 20000;\n                }\n                if (this.spotsValue &lt;= 3) {\n                    timeout = 600000;\n                }\n\n                setTimeout(() =&gt; {\n                    this.spotsValue--;\n\n                    const spotIndex = (this.spots.length - 1) - this.spotsValue;\n\n                    this.spots[spotIndex].status = &#039;taken&#039;;\n                    this.spots[spotIndex].class = this.spotClasses.taken;\n\n                    if (this.spotsValue &gt; 1) updateSpotsCount(timeout);\n                }, timeout)\n            }\n\n            updateSpotsCount(initialTimeout);\n        },\n    }))\n&lt;\/script&gt;\n    &quot;,&quot;1864698298-0&quot;:&quot;&lt;script&gt;\n    Alpine.store(&#039;mainForm&#039;, {\n        showForm: $wire.showForm,\n        checkAvailability: false,\n    });\n&lt;\/script&gt;\n    &quot;},&quot;dispatches&quot;:[{&quot;name&quot;:&quot;telDOMChanged&quot;,&quot;params&quot;:[]}]}" wire:id="81GiS7wOUMLB9qsuWgmt">
+    <div class="main-form" x-data="mainForm" id="main-form">
+    <div class="container main-form__container">
+        <div wire:ignore class="main-form__header-wrapper" x-ref="mainFormHeaderWrapper">
+            <div
+                class="main-form__header"
+                x-show="!showSpots"
+                x-ref="mainFormHeader"
+                x-transition:leave="transition ease-in duration-500 transform"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0 -translate-y-2"
+            >
+                <h1 class="text-heading-1 main-form__heading">
+                    Discover <span class="text-accent">the power</span> of AI
+                </h1>
+                <button class="btn btn--primary" x-on:click="checkAvailability"><p>Check Availability</p></button>
+            </div>
+            <div
+                class="spots-counter"
+                x-ref="spotsCounter"
+                x-show="showSpots"
+                x-transition:enter="transition ease-out duration-500 delay-500 transform"
+                x-transition:enter-start="opacity-0 -translate-y-2"
+                x-transition:enter-end="opacity-100"
+            >
+                <div class="spots-counter__header">
+                    <h5
+                        class="spots-counter__heading"
+                        x-show="!showForm"
+                        x-transition:leave="transition ease-in duration-500 transform"
+                        x-transition:leave-start="opacity-100"
+                        x-transition:leave-end="opacity-0 translate-y-2"
+                    >
+                        Checking...
+                    </h5>
+                    <h5
+                        class="spots-counter__heading"
+                        x-show="showForm"
+                        x-transition:enter="transition ease-out duration-500 delay-300 transform"
+                        x-transition:enter-start="opacity-0 -translate-y-2"
+                        x-transition:enter-end="opacity-100"
+                    >
+                        There are still spots left
+                    </h5>
+                </div>
+                <div class="spots-counter__grid-wrapper" :class="showForm && 'spots-counter__grid-wrapper--loaded'">
+                    <div class="spots-counter__grid">
+                        <template x-for="spot in spots" :key="spot.id">
+                            <div class="spots-counter__spot" :class="spot.class"></div>
+                        </template>
+                    </div>
+                    <div
+                        class="spots-counter__spots-left"
+                        x-show="showForm"
+                        x-transition:enter="transition ease-out duration-500 transform"
+                        x-transition:enter-start="opacity-0 -translate-x-2"
+                        x-transition:enter-end="opacity-100"
+                    >
+                        <span class="spots-counter__spots-left-number" x-text="spotsValue"></span>
+                    </div>
+                </div>
+                <div class="spots-counter__arrows-down" :class="showForm ? 'opacity-100' : 'opacity-0'">
+                    <div class="arrows-down">
+    <!--[if BLOCK]><![endif]-->        <svg class="arrows-down__arrow" viewBox="0 0 24 24"><path d="M12,20c-.534,0-1.036-.208-1.414-.586l-5.281-5.281,1.414-1.414,5.281,5.281,5.281-5.281,1.414,1.414-5.281,5.281c-.378,.378-.88,.586-1.414,.586Zm.825-7.001l5.871-5.871-1.414-1.414-5.281,5.282L6.719,5.714l-1.414,1.414,5.873,5.874c.227,.225,.523,.337,.821,.337s.598-.113,.826-.34Z"/></svg>
+            <svg class="arrows-down__arrow" viewBox="0 0 24 24"><path d="M12,20c-.534,0-1.036-.208-1.414-.586l-5.281-5.281,1.414-1.414,5.281,5.281,5.281-5.281,1.414,1.414-5.281,5.281c-.378,.378-.88,.586-1.414,.586Zm.825-7.001l5.871-5.871-1.414-1.414-5.281,5.282L6.719,5.714l-1.414,1.414,5.873,5.874c.227,.225,.523,.337,.821,.337s.598-.113,.826-.34Z"/></svg>
+            <svg class="arrows-down__arrow" viewBox="0 0 24 24"><path d="M12,20c-.534,0-1.036-.208-1.414-.586l-5.281-5.281,1.414-1.414,5.281,5.281,5.281-5.281,1.414,1.414-5.281,5.281c-.378,.378-.88,.586-1.414,.586Zm.825-7.001l5.871-5.871-1.414-1.414-5.281,5.282L6.719,5.714l-1.414,1.414,5.873,5.874c.227,.225,.523,.337,.821,.337s.598-.113,.826-.34Z"/></svg>
+    <!--[if ENDBLOCK]><![endif]-->
+</div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="main-form__form-container"
+            x-show="showForm"
+            x-collapse.duration.500ms
+        >
+            <h1 class="text-heading-1 main-form__heading">
+                SUBMIT YOUR DETAILS
+                <br>
+                <span class="text-accent">AND START NOW!</span>
+            </h1>
+            <div class="main-form__content">
+                <form wire:submit="lead" class="main-form__form">
+                    <label class="main-form__label">
+                        First Name
+                        <input wire:model="user.fn" class="main-form__input" type="text" placeholder="First Name" required />
+                    </label>
+                    <label class="main-form__label">
+                        Last Name
+                        <input wire:model="user.ln" class="main-form__input" type="text" placeholder="Last Name" required />
+                    </label>
+                    <label class="main-form__label">
+                        Email
+                        <input wire:model="user.em" class="main-form__input" type="email" placeholder="Email" required />
+                    </label>
+                    <label class="main-form__label">
+                        Phone
+                        <div class="main-form__input-phone-wrapper">
+                            <div
+                                class="main-form__flag-wrapper"
+                                x-data="{
+                                    country: $wire.country,
+                                    countries: $wire.countries,
+                                    showCountrySelect: false,
+                                    openCountrySelect() {
+                                        this.showCountrySelect = true;
+                                    },
+                                    selectCountry(country) {
+                                        this.country = country;
+                                        this.showCountrySelect = false;
+                                    }
+                                }"
+                            >
+                                <template x-for="item in countries">
+                                    <img
+                                        x-show="country == item"
+                                        x-on:click="openCountrySelect"
+                                        class="main-form__flag"
+                                        :src="'/vendor/blade-flags/country-' + item.toLowerCase() + '.svg'"
+                                        :alt="item"
+                                    />
+                                </template>
+                                <div class="main-form__flag-select"
+                                     x-show="showCountrySelect"
+                                     x-transition:enter="transition ease-out duration-300"
+                                     x-transition:enter-start="opacity-0"
+                                     x-transition:enter-end="opacity-100"
+                                     x-transition:leave="transition ease-in duration-300"
+                                     x-transition:leave-start="opacity-100"
+                                     x-transition:leave-end="opacity-0"
+                                >
+                                    <template x-for="item in countries">
+                                        <img
+                                            x-show="country != item"
+                                            x-on:click="selectCountry(item)"
+                                            class="main-form__flag"
+                                            :src="'/vendor/blade-flags/country-' + item.toLowerCase() + '.svg'"
+                                            :alt="item"
+                                        />
+                                    </template>
+                                </div>
+                            </div>
+                            <input wire:model="user.ph" class="main-form__input main-form__input--phone" type="tel" placeholder="201-555-0123" required />
+                        </div>
+                    </label>
+                    <label class="main-form__checkbox-label">
+                        <input wire:model="user.tc" type="checkbox" class="main-form__checkbox-hidden peer" required />
+                        <div class="main-form__checkbox"></div>
+                        By continuing I accept the T & C
+                    </label>
+                    <div class="main-form__info">
+                        <div wire:loading>
+                            <p class="main-form__info-text">Please wait...</p>
+                        </div>
+                        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+                    </div>
+                    <button wire:loading.class="btn--loading" class="btn btn--primary"><p>Gain Access</p></button>
+                    <div class="main-form__sec">
+                        <img src="https://artifinsider.com/./img/sec-1.svg" alt="sec1">
+                        <img src="https://artifinsider.com/./img/sec-2.svg" alt="sec2">
+                        <img src="https://artifinsider.com/./img/sec-3.svg" alt="sec3">
+                        <img src="https://artifinsider.com/./img/sec-4.svg" alt="sec4">
+                        <img src="https://artifinsider.com/./img/sec-5.svg" alt="sec5">
+                    </div>
+                </form>
+                <div class="main-form__metrics-wrapper">
+                    <div class="main-form__metrics">
+                        <div class="main-form__metric">
+                            <h3 class="main-form__metric-value">$5.8M</h3>
+                            <p class="main-form__metric-label">User Profits</p>
+                        </div>
+                        <div class="main-form__metric">
+                            <h3 class="main-form__metric-value">194</h3>
+                            <p class="main-form__metric-label">System Users</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+                <section class="process">
+    <div class="grid-overlay"></div>
+    <div class="container process__container">
+        <div class="process__content">
+            <div class="process__header">
+                <h2 class="text-heading-2">The Process</h2>
+                <p class="text-subheading">
+                    A step-by-step guide to activating your personalized AI System and start generating passive income effortlessly
+                </p>
+            </div>
+            <div class="process__steps">
+                <div class="process__step group">
+                    <div class="process__step-image-wrapper">
+                        <img class="process__step-image" src="https://artifinsider.com/./img/neon-grid/step-1.svg" alt="step-1" />
+                    </div>
+                    <div class="process__step-text">
+                        <h5 class="process__step-title">
+                            <span>Step 1</span>
+                            <span class="text-accent">Watch the Video</span>
+                        </h5>
+                        <p class="process__step-description">Begin your journey by watching our introductory video. This video will provide you with all the essential information you need to understand our system.</p>
+                    </div>
+                </div>
+                <div class="process__step group">
+                    <div class="process__step-image-wrapper">
+                        <img class="process__step-image" src="https://artifinsider.com/./img/neon-grid/step-2.svg" alt="step-2" />
+                    </div>
+                    <div class="process__step-text">
+                        <h5 class="process__step-title">
+                            <span>Step 2</span>
+                            <span class="text-accent">Fill Out the Form</span>
+                        </h5>
+                        <p class="process__step-description">Once you’ve watched the video, proceed to fill out the form with your main information. Ensure that all the details are accurate to facilitate a smooth onboarding process.</p>
+                    </div>
+                </div>
+                <div class="process__step group">
+                    <div class="process__step-image-wrapper">
+                        <img class="process__step-image" src="https://artifinsider.com/./img/neon-grid/step-3.svg" alt="step-3" />
+                    </div>
+                    <div class="process__step-text">
+                        <h5 class="process__step-title">
+                            <span>Step 3</span>
+                            <span class="text-accent">Activate the AI</span>
+                        </h5>
+                        <p class="process__step-description">Click the “Start” button, sit back, and let our AI do everything for you. Our advanced technology will handle all the complex tasks, allowing you to relax while it works on your behalf to generate profits.</p>
+                    </div>
+                </div>
+                <div class="process__step group">
+                    <div class="process__step-image-wrapper">
+                        <img class="process__step-image" src="https://artifinsider.com/./img/neon-grid/step-4.svg" alt="step-4" />
+                    </div>
+                    <div class="process__step-text">
+                        <h5 class="process__step-title">
+                            <span>Step 4</span>
+                            <span class="text-accent">Enjoy Your Earnings</span>
+                        </h5>
+                        <p class="process__step-description">Check out your daily profits and decide how to spend them. With our AI working for you, you can enjoy the benefits of passive income and achieve your goals and dreams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="process__cta">
+            <h3 class="process__cta-title">
+                Join us today and start your journey to <span class="text-accent">financial freedom</span>
+            </h3>
+            <a href="#main-form" class="btn btn--secondary"><p>Check Availability</p></a>
+        </div>
+    </div>
+</section>
+            <section class="reviews">
+    <div class="container reviews__container">
+        <div class="reviews__header">
+            <h2 class="text-heading-2">What Our Customers Say</h2>
+            <p class="text-subheading">See what our best customers have to say about our automated system.</p>
+        </div>
+        <div class="reviews__grid">
+            <!--[if BLOCK]><![endif]-->                <div class="reviews__item">
+                    <p class="reviews__item-text">
+                        "My husband left me when my youngest turned two. Being a single mom means every minute counts, and I needed a way to earn extra money without sacrificing time with my children. artifinsider.com was a game-changer. It&#039;s incredibly simple to use, and I&#039;m making over $2,000 a day on autopilot."
+                    </p>
+                    <div class="reviews__item-details">
+                        <img class="reviews__item-photo" src="https://artifinsider.com/img/reviews/0007_400x400.jpg" alt="Jessica" />
+                        <div class="reviews__item-label">
+                            <h5 class="reviews__item-name">Jessica</h5>
+                            <p class="reviews__item-city">Phoenix</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="reviews__item">
+                    <p class="reviews__item-text">
+                        "I&#039;ve been trying to make money online for so long but nothing worked for me. Everything required so much time and tech knowledge I didn&#039;t have. But not this one. artifinsider.com is so easy, that I geniuenly believe an 8 year old can do it."
+                    </p>
+                    <div class="reviews__item-details">
+                        <img class="reviews__item-photo" src="https://artifinsider.com/img/reviews/0011_400x400.jpg" alt="Margaret" />
+                        <div class="reviews__item-label">
+                            <h5 class="reviews__item-name">Margaret</h5>
+                            <p class="reviews__item-city">New York</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="reviews__item">
+                    <p class="reviews__item-text">
+                        "I was retired and looking for a way to supplement my income without much effort. artifinsider.com turned out to be perfect. It runs on autopilot and brings in extra money every month."
+                    </p>
+                    <div class="reviews__item-details">
+                        <img class="reviews__item-photo" src="https://artifinsider.com/img/reviews/0004_400x400.jpg" alt="John" />
+                        <div class="reviews__item-label">
+                            <h5 class="reviews__item-name">John</h5>
+                            <p class="reviews__item-city">Los Angeles</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="reviews__item">
+                    <p class="reviews__item-text">
+                        "I never thought I&#039;d be able to make money online because I&#039;m not tech-savvy. artifinsider.com changed my mind. It’s so user-friendly and does everything on its own. I already made over $200,000 in less than 6 months."
+                    </p>
+                    <div class="reviews__item-details">
+                        <img class="reviews__item-photo" src="https://artifinsider.com/img/reviews/0005_400x400.jpg" alt="Michael" />
+                        <div class="reviews__item-label">
+                            <h5 class="reviews__item-name">Michael</h5>
+                            <p class="reviews__item-city">Houston</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="reviews__item">
+                    <p class="reviews__item-text">
+                        "Being on a fixed income was stressful I had so many sleepless nights, but artifinsider.com gave me financial freedom. It’s so easy to use that I can’t believe I didn’t find it sooner. It&#039;s like having an army of money-making assistants."
+                    </p>
+                    <div class="reviews__item-details">
+                        <img class="reviews__item-photo" src="https://artifinsider.com/img/reviews/0010_400x400.jpg" alt="David" />
+                        <div class="reviews__item-label">
+                            <h5 class="reviews__item-name">David</h5>
+                            <p class="reviews__item-city">Philadelphia</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="reviews__item">
+                    <p class="reviews__item-text">
+                        "I got fired last year. Beleive it or not, I was replaced by AI. In the beginning I felt so much hurt that I didn&#039;t want to do anything with AI. Who would&#039;ve believed it will make me more than $100,000?"
+                    </p>
+                    <div class="reviews__item-details">
+                        <img class="reviews__item-photo" src="https://artifinsider.com/img/reviews/0009_400x400.jpg" alt="Sarah" />
+                        <div class="reviews__item-label">
+                            <h5 class="reviews__item-name">Sarah</h5>
+                            <p class="reviews__item-city">San Francisco</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="reviews__item">
+                    <p class="reviews__item-text">
+                        "I&#039;ve been using artifinsider.com for 4 months now and I&#039;m making more money while sleeping than any of my making in their full time job. That&#039;s insane!"
+                    </p>
+                    <div class="reviews__item-details">
+                        <img class="reviews__item-photo" src="https://artifinsider.com/img/reviews/0006_400x400.jpg" alt="Derryl" />
+                        <div class="reviews__item-label">
+                            <h5 class="reviews__item-name">Derryl</h5>
+                            <p class="reviews__item-city">Washington</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="reviews__item">
+                    <p class="reviews__item-text">
+                        "As a grandparent, I don&#039;t have a lot of free time to spend on learning new technologies. artifinsider.com handles everything for me, letting me earn money while I focus on my family."
+                    </p>
+                    <div class="reviews__item-details">
+                        <img class="reviews__item-photo" src="https://artifinsider.com/img/reviews/0008_400x400.jpg" alt="Jane" />
+                        <div class="reviews__item-label">
+                            <h5 class="reviews__item-name">Jane</h5>
+                            <p class="reviews__item-city">Chicago</p>
+                        </div>
+                    </div>
+                </div>
+            <!--[if ENDBLOCK]><![endif]-->
+        </div>
+    </div>
+</section>
+            <section class="cta">
+    <div class="container cta__container">
+        <h3 class="cta__heading">
+            Click on the button below and embark on a journey that will lead you to the life <span class="text-accent">you always dreamed of</span>
+        </h3>
+        <div class="arrows-down">
+    <!--[if BLOCK]><![endif]-->        <svg class="arrows-down__arrow" viewBox="0 0 24 24"><path d="M12,20c-.534,0-1.036-.208-1.414-.586l-5.281-5.281,1.414-1.414,5.281,5.281,5.281-5.281,1.414,1.414-5.281,5.281c-.378,.378-.88,.586-1.414,.586Zm.825-7.001l5.871-5.871-1.414-1.414-5.281,5.282L6.719,5.714l-1.414,1.414,5.873,5.874c.227,.225,.523,.337,.821,.337s.598-.113,.826-.34Z"/></svg>
+            <svg class="arrows-down__arrow" viewBox="0 0 24 24"><path d="M12,20c-.534,0-1.036-.208-1.414-.586l-5.281-5.281,1.414-1.414,5.281,5.281,5.281-5.281,1.414,1.414-5.281,5.281c-.378,.378-.88,.586-1.414,.586Zm.825-7.001l5.871-5.871-1.414-1.414-5.281,5.282L6.719,5.714l-1.414,1.414,5.873,5.874c.227,.225,.523,.337,.821,.337s.598-.113,.826-.34Z"/></svg>
+            <svg class="arrows-down__arrow" viewBox="0 0 24 24"><path d="M12,20c-.534,0-1.036-.208-1.414-.586l-5.281-5.281,1.414-1.414,5.281,5.281,5.281-5.281,1.414,1.414-5.281,5.281c-.378,.378-.88,.586-1.414,.586Zm.825-7.001l5.871-5.871-1.414-1.414-5.281,5.282L6.719,5.714l-1.414,1.414,5.873,5.874c.227,.225,.523,.337,.821,.337s.598-.113,.826-.34Z"/></svg>
+    <!--[if ENDBLOCK]><![endif]-->
+</div>
+        <a href="#main-form" class="btn btn--secondary"><p>Check Availability</p></a>
+    </div>
+</section>
+            <div wire:snapshot="{&quot;data&quot;:{&quot;modals&quot;:[[[{&quot;name&quot;:&quot;ed&quot;,&quot;view&quot;:&quot;bb-2&quot;,&quot;title&quot;:&quot;Earnings Disclaimer&quot;,&quot;content_view&quot;:&quot;templates.common.modal-content.ed.bb-2&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;name&quot;:&quot;pp&quot;,&quot;view&quot;:&quot;bb-2&quot;,&quot;title&quot;:&quot;Privacy Policy&quot;,&quot;content_view&quot;:&quot;templates.common.modal-content.pp.bb-2&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;name&quot;:&quot;tc&quot;,&quot;view&quot;:&quot;bb-2&quot;,&quot;title&quot;:&quot;Terms &amp; Conditions&quot;,&quot;content_view&quot;:&quot;templates.common.modal-content.tc.bb-2&quot;},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;modalView&quot;:&quot;templates.neon-grid.modal.modal-0&quot;,&quot;name&quot;:&quot;footer&quot;,&quot;partKey&quot;:6,&quot;livewireVersion&quot;:&quot;0&quot;,&quot;viewVersion&quot;:&quot;2&quot;,&quot;template&quot;:&quot;neon-grid&quot;,&quot;viewComponent&quot;:&quot;templates.neon-grid.footer.footer-2&quot;,&quot;livewireComponent&quot;:&quot;livewire.footer.0&quot;,&quot;data&quot;:[{&quot;modals&quot;:[{&quot;data&quot;:[[[{&quot;name&quot;:&quot;ed&quot;,&quot;view&quot;:&quot;bb-2&quot;,&quot;title&quot;:&quot;Earnings Disclaimer&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;name&quot;:&quot;pp&quot;,&quot;view&quot;:&quot;bb-2&quot;,&quot;title&quot;:&quot;Privacy Policy&quot;},{&quot;s&quot;:&quot;arr&quot;}],[{&quot;name&quot;:&quot;tc&quot;,&quot;view&quot;:&quot;bb-2&quot;,&quot;title&quot;:&quot;Terms &amp; Conditions&quot;},{&quot;s&quot;:&quot;arr&quot;}]],{&quot;s&quot;:&quot;arr&quot;}],&quot;view&quot;:&quot;0&quot;},{&quot;s&quot;:&quot;arr&quot;}]},{&quot;s&quot;:&quot;arr&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;sMW850ekTc8fS1veiSRo&quot;,&quot;name&quot;:&quot;footer&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[&quot;2282265567-0&quot;],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;9fc0897945e8c3fc35b6dcd6364cdc029417ae178e863fdd1f0c59debe797c05&quot;}" wire:effects="{&quot;scripts&quot;:{&quot;2282265567-0&quot;:&quot;&lt;script&gt;\n    Alpine.data(&#039;footer&#039;, () =&gt; ({\n        modals: $wire.modals,\n        init() {\n            this.modals.forEach((modal) =&gt; {\n                $store.app.modal[modal.name] = false;\n            });\n        }\n    }))\n&lt;\/script&gt;\n    &quot;}}" wire:id="sMW850ekTc8fS1veiSRo" x-data="footer">
+    <section class="footer">
+    <div class="footer__container footer-bg">
+        <div class="footer__content">
+            <p class="footer__content-text">
+                This site is not a part of the Facebook website or Facebook Inc.
+            </p>
+            <p class="footer__content-text">
+                Additionally, This site is not endorsed by Facebook in any way. Facebook is a trademark of Facebook, Inc.
+            </p>
+        </div>
+        <div
+            class="footer__feedback"
+            x-data="{
+                open: false,
+                sent: false,
+                toggle() {
+                    this.open = !this.open;
+                },
+                send() {
+                    this.sent = true;
+                }
+            }"
+        >
+            <div class="footer__feedback-header">
+                <button class="btn btn--secondary" :class="open && 'invisible'" x-on:click="toggle()">
+                    <p>Contact us</p>
+                </button>
+                <h3 class="footer__feedback-header-text" x-show="open">Contact us</h3>
+            </div>
+            <div
+                class="footer__feedback-form"
+                x-show="open"
+                x-collapse
+            >
+                <form x-show="!sent" class="feedback-form__form" action="" method="POST">
+                    <label class="feedback-form__label" for="name">Name</label>
+                    <input
+                        class="feedback-form__input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        required
+                    />
+                    <label class="feedback-form__label" for="email">Email</label>
+                    <input
+                        class="feedback-form__input"
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                    />
+                    <label class="feedback-form__label" for="message">Message</label>
+                    <textarea
+                        class="feedback-form__input"
+                        name="message"
+                        id="message"
+                        required
+                    ></textarea>
+                    <button x-on:click="send()" class="btn btn--primary" type="button">
+                        <p>Send</p>
+                    </button>
+                </form>
+                <p x-show="sent" class="footer__feedback-form-text">Thank you for your submission! We will be in touch with you shortly.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p class="footer__copyright">
+            artifinsider.com © 2025. All right reserved
+        </p>
+        <ul class="footer__links">
+            <!--[if BLOCK]><![endif]-->                <li x-on:click="$store.app.openModal('ed')" class="footer__link">Earnings Disclaimer</li>
+                            <li x-on:click="$store.app.openModal('pp')" class="footer__link">Privacy Policy</li>
+                            <li x-on:click="$store.app.openModal('tc')" class="footer__link">Terms &amp; Conditions</li>
+            <!--[if ENDBLOCK]><![endif]-->
+        </ul>
+    </div>
+    <div class="bottom-gradient">
+        <div class="bottom-gradient__content"></div>
+    </div>
+    <!--[if BLOCK]><![endif]-->        <template x-teleport="body">
+    <div class="modal"
+         x-show="$store.app.modal.ed"
+         x-cloak
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition ease-in duration-300"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+    >
+        <div class="modal__wrapper"
+             x-show="$store.app.modal.ed"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 -translate-y-8"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-300"
+             x-transition:leave-start="opacity-100 translate-y-0"
+             x-transition:leave-end="opacity-0 -translate-y-8"
+        >
+            <div class="modal__container">
+                <!--[if BLOCK]><![endif]-->                    <div class="modal__header">
+                        <h2 class="modal__title">Earnings Disclaimer</h2>
+                    </div>
+                <!--[if ENDBLOCK]><![endif]-->
+                <div class="modal__content">
+                    <p>The statements presented here are depictions of individual results. Performance may vary and actual results are not guaranteed. Testimonials and endorsements are portrayed by compensated actors and are not representative of all customers.</p>
+<p>Every effort has been made to accurately represent this product and it's potential. Even though this industry is one of the few where one can write their own check in terms of earnings, there is no guarantee that you will earn any money using the techniques and ideas in these materials. Examples in these materials are not to be interpreted as a promise or guarantee of earnings. Earning potential is entirely dependent on the person using our product, ideas and techniques. we do not purport this as a "get rich scheme."</p>
+<p>Any claims made of actual earnings or examples of actual results can be verified upon request. Your level of success in attaining the results claimed in our materials depends on the time you devote to the course, ideas and techniques mentioned, your finances, knowledge and various skills. Since these factors differ according to individuals, we cannot guarantee your success or income level. Nor are we responsible for any of your actions. All screenshots, proof and photos are for illustration purposes only.</p>
+<p>Materials in our product and our website may contain information that includes or is based upon forward-looking statements within the meaning of the securities litigation reform act of 1995. Forward-looking statements give our expectations or forecasts of future events. You can identify these statements by the fact that they do not relate strictly to historical or current facts. They use words such as "anticipate", "estimate", "expect", "project", "intend, "plan", "believe", and other words and terms of similar meaning in connection with a description of potential earnings or financial performance.</p>
+<p>Any and all forward-looking statements here or on any of our sales material are intended to express our opinion of earnings potential. Many factors will be important in determining your actual results and no guarantees are made that you will achieve results similar to ours or anybody else's, in fact no guarantees are made that you will achieve any results from our ideas and techniques in our material.</p>
+                </div>
+                <div class="modal__footer">
+                    <button x-on:click="$store.app.closeModal('ed')" class="btn btn--primary">
+                        <p>Close</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+            <template x-teleport="body">
+    <div class="modal"
+         x-show="$store.app.modal.pp"
+         x-cloak
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition ease-in duration-300"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+    >
+        <div class="modal__wrapper"
+             x-show="$store.app.modal.pp"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 -translate-y-8"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-300"
+             x-transition:leave-start="opacity-100 translate-y-0"
+             x-transition:leave-end="opacity-0 -translate-y-8"
+        >
+            <div class="modal__container">
+                <!--[if BLOCK]><![endif]-->                    <div class="modal__header">
+                        <h2 class="modal__title">Privacy Policy</h2>
+                    </div>
+                <!--[if ENDBLOCK]><![endif]-->
+                <div class="modal__content">
+                    <p>This privacy policy sets out how we will process and use any personal data that you provide to us, or that we may collect as a result of visiting this website. Please read the following information to understand our practices with regards to your personal data and how we will treat it.</p>
+<p><b>INFORMATION WE MAY COLLECT FROM YOU</b></p>
+<p>We may collect and process the following data about you:</p>
+<ul class="list-disc list-inside">
+    <li>Any information that you provide by filling in forms on our site. This includes provided information at the time of registering to use our site, posting material, requesting further services or subscribing to any service offered by us on the site. We might also request further information and if you should report a problem with our site.</li>
+    <li>We may keep a record of any correspondence if you should contact us.</li>
+    <li>Details of the resources you access and of your visits to our site</li>
+    <li>Details of transactions you may carry out through our site and of the completion of your orders.</li>
+    <li>We may collect Name, Address, Phone and Email for marketing purposes.</li>
+</ul>
+<p><b>IP ADDRESSES AND COOKIES</b></p>
+<p>We may collect information about your computer; this is statistical data concerning your browsing actions and does not identify you individually. This information includes your IP address where available, operating system and browser type, for system administration and to report collective information to our advertisers.</p>
+<p>We may also collect information about your general internet usage using cookie files stored on the hard drive of all computers. The cookies contain valuable information that is transferred to your computers hard drive. In collecting this information we are able to improve our site and deliver a better and more personalised service.</p>
+<p>You can refuse to accept cookies but note that in doing this you may be unable to access certain parts of our site. You can do this by activating the setting on your browser which allows you to refuse the setting.</p>
+<p>Our advertisers may also use cookies but please note that we have no control over this.</p>
+<p><b>USES MADE OF THE INFORMATION</b></p>
+<p>We use the information held about you in the following ways:</p>
+<ul class="list-disc list-inside">
+    <li>To notify you of any changes to our service.</li>
+    <li>To ensure that the content of our site is presented in the most effective manner for you and your computer.</li>
+    <li>Where you have consented to be contacted, to provide you with the information, products and services requested from us or in the event that we feel will be of interest to you.</li>
+    <li>To allow you to participate in interactive features of our service, should you choose to do so.</li>
+    <li>In allowing ourselves to carry out our obligations concerning any contracts entered into between you and us.</li>
+</ul>
+<p>We may also use your data to inform you and provide information on goods and services that may be of interest to you.</p>
+<p>If you do not want your data used in this way please use the unsubscribe link provided in any message (email or sms) sent to you, or reply stop, or contact our support via <a href="#">Website Link Here...</a>.</p>
+<p><b>DISCLOSURE OF YOUR INFORMATION</b></p>
+<p>We reserve the right to disclosure your personally identifiable information as required by law and when we believe that disclosure is necessary to protect our rights and/or comply with a judicial proceeding, Court order, or legal process served on our Website.</p>
+<p>We use other "external services" such as a credit card processing company to bill you for goods and services, an email service provider to send out emails on our behalf. When you sign up for our services we will share your information as necessary for these services. These external providers are prohibited from using your personally identifiable information for promotional purposes.</p>
+<p><b>THIRD PARTY WEBSITES</b></p>
+<p>From time to time our site may contain links to and from the websites of our partner networks, advertisers and affiliates. If you visit any of these sites please note that they have their own privacy policies and you should check these before submitting any personal data. We cannot accept any responsibility or liability for these policies.</p>
+<p><b>USE OF DATA COLLECTED</b></p>
+<p>We use your personal, demographic and profile data to enhance your experience at our site and to enable us to present content we think you might be interested in. We use your contact information to send you information about our company in addition to promotional and marketing material. We may also use your personal, demographic and profile data to improve our site, for statistical analysis, for marketing and promotional purposes, send SMS alerts or notification, and for editorial or feedback purposes for our advertisers. Information collected by us may be added to our databases and used for future telemarketing, SMS text-messaging, e-mails or postal mailings regarding site updates, new products and services, upcoming events, and/or status of orders placed online. By submitting your information to our website you give us permission to send you marketing messages.</p>
+<p><b>SMS OFFERING AND OPT-OUT RIGHTS</b></p>
+<p>For SMS text messages, you may remove your information by clicking the unsubscribe link provided to you within every message, or reply stop, or by contacting our support team at <a href="#">Website Link Here...</a>.</p>
+<p><b>CHANGES TO OUR PRIVACY POLICY</b></p>
+<p>This policy may change from time to time. Please visit this page for changes.</p>
+                </div>
+                <div class="modal__footer">
+                    <button x-on:click="$store.app.closeModal('pp')" class="btn btn--primary">
+                        <p>Close</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+            <template x-teleport="body">
+    <div class="modal"
+         x-show="$store.app.modal.tc"
+         x-cloak
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition ease-in duration-300"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+    >
+        <div class="modal__wrapper"
+             x-show="$store.app.modal.tc"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 -translate-y-8"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-300"
+             x-transition:leave-start="opacity-100 translate-y-0"
+             x-transition:leave-end="opacity-0 -translate-y-8"
+        >
+            <div class="modal__container">
+                <!--[if BLOCK]><![endif]-->                    <div class="modal__header">
+                        <h2 class="modal__title">Terms &amp; Conditions</h2>
+                    </div>
+                <!--[if ENDBLOCK]><![endif]-->
+                <div class="modal__content">
+                    <p><b>LEGAL DISCLAIMER:</b></p>
+<p>The statements presented here are depictions of individual results. Performance may vary and actual results are not guaranteed. Testimonials and endorsements are portrayed by compensated actors and are not representative of all customers.</p>
+<p><b>1. Introduction</b></p>
+<p>These terms and conditions govern your use of this website. By using our website, you agree to these terms and conditions in full. If you do not accept or do not agree with these terms and conditions or any part of these terms and conditions, you must not use our website.</p>
+<p><b>2. Your Privacy</b></p>
+<p>Where we collect your personal information as a result of your accessing and using this website, our Privacy Policy will apply to that information. Accordingly, these Terms must be read in conjunction with our Privacy Policy.</p>
+<p><b>3. Licence to use Website</b></p>
+<p>Unless otherwise stated, we or our licensors own the intellectual property rights in the website and material on the website. All these intellectual property rights are reserved, subject to the licence below. Subject to the restrictions set out below and elsewhere in these terms and conditions, you may view, download for caching purposes only, and print pages from the website for your own personal use. You are not permitted to:</p>
+<ul class="list-disc list-inside">
+    <li>republish material from this website;</li>
+    <li>republish material from this website on another website;</li>
+    <li>sell, rent or sub-license material from this website;</li>
+    <li>show any material from this website in public;</li>
+    <li>reproduce, duplicate, copy or otherwise exploit material on our website for a commercial purpose;</li>
+    <li>edit or otherwise alter any material on this website;</li>
+    <li>redistribute any material from this website except for content explicitly made available for redistribution (such as our newsletter).</li>
+</ul>
+<p><b>4. Acceptable Use</b></p>
+<p>You must not use our website in any manner that is illegal, unlawful, fraudulent or harmful, or in relation with any illegal, unlawful, fraudulent or harmful purpose or activity; or in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website. You must not use our website to copy, store, transmit, host, send, use, publish or distribute any material which consists of or is affiliated to any spyware, computer virus, Trojan horse, worm, keystroke logger, rootkit or other malicious computer software whatsoever. Without our prior express written consent, you must not conduct any systematic or automated data collection activities including without limitation scraping, data mining, data extraction and data harvesting on or in relation to our website. You must not use our website to send or transmit unsolicited commercial communications. You must not use our website for any objective related to marketing without our prior express written consent.</p>
+<p><b>5. Restricted Access</b></p>
+<p>Access to particular areas of our website is restricted. At our discretion we reserve the right to restrict access to areas of our website, or our entire website. Should we provide you with a user ID and password to enable you access to restricted areas of our website or other content or services, you must ensure that your user ID and password is kept confidential. At our discretion we may disable your user ID and password without notice or justification.</p>
+<p><b>6. Your username and password</b></p>
+<p>Your username and password are personal to you and you must at all times maintain the confidentiality of your username and password and not disclose them to any third party. Your username and password may be used by one person only, i.e. a single login is not permitted to be shared by multiple people. You agree that you are solely responsible for any use of this website by any person using your username and password and you agree to indemnify us against any and all claims arising out of your failure to maintain the confidentiality of your username or password. We will not be liable for any loss that you may incur as a result of someone else using your password or account (whether with or without your knowledge). You agree to notify us immediately of any unauthorised use of your account or any other breach of security.</p>
+<p><b>7. Products</b></p>
+<p>We may offer goods or services ('Products') for sale on this website. Your purchase of each Product shall be governed by these Terms and any additional terms that we communicate to you at the time of purchase.</p>
+<p><b>8. Subscription Products</b></p>
+<p>Some Products may be purchased for a specified term, e.g., monthly or annually ('Subscription Products'), rather than relating to a one-off good or service. The subscription term varies depending on the Subscription Product that you order. You are entitled to receive the relevant Subscription Product only during the subscription term specified in your order.</p>
+<p><b>9. Contract formation</b></p>
+<p>This website and the information on it constitute an invitation to treat and not an offer to supply Products. When you order Products from us, this constitutes an offer from you to buy those Products in accordance with these Terms. Only when we have accepted your order through the website following our receipt of your payment for that order shall a contract be formed between you and us.</p>
+<p><b>10. Our discretion in rejecting or accepting orders</b></p>
+<p>No order shall be deemed accepted by us until you have received an order confirmation from us. We reserve the right to accept or reject (for any reason whatsoever and in whole or in part) any order submitted by you. If we reject your order (or part of your order), any money paid by you in relation to the rejected part of that order shall be refunded and we shall have no further liability to you in relation to the rejected part of that order.</p>
+<p><b>11. Prices</b></p>
+<p>The price payable by you for any Product ordered by you shall be the price quoted on this website at the time your order is submitted. We may vary any prices on this website at any time and without notice to you.</p>
+<p><b>12. Taxes and other charges</b></p>
+<p>All prices on this website are exclusive of all import fees, duties, tariffs, taxes or other imposts or charges which may be payable in relation to your order. You shall be liable to pay any import fees, duties, taxes, and other imposts or charges which are payable in relation to your order. We shall not be liable for any import fees, duties, tariffs, taxes or other imposts or charges which may be payable in relation to your order.</p>
+<p><b>13. Payment</b></p>
+<p>We may charge fees or other amounts to access certain aspects of the Products available on this website. We have no obligation to supply Products unless and until we receive payment of all prices and fees. You are fully liable for all charges incurred under your account whether or not authorised by you. You must pay for your orders using the third-party payments service selected by us, such as ClickSure.com. You agree to pay for your orders by authorising our nominated third-party payment service to charge your credit card account for the total price of the goods or services ordered and the applicable delivery charges (if any). You agree to be bound by the terms of these third-party payment services.</p>
+<p><b>14. Problems with payments</b></p>
+<p>If there is a problem with your payment (for example, if your credit card transaction is declined), we may contact you to make alternative payment arrangements. You will be liable for all debt collection costs where you fail to make payment for any order.</p>
+<p><b>15. Cancellation of orders: Non-Subscription Products</b></p>
+<p>You may cancel your order any time prior to our order confirmation. Because downloadable goods or services are available to you, and could be copied by you on delivery, you cannot cancel once we have confirmed your order. If you cancel an order in accordance with these Terms before confirmation, we will refund your money as soon as reasonably possible and in any event within 60 days of cancellation of your order.</p>
+<p><b>16. Outbound hyperlinks</b></p>
+<p>This website may contain hyperlinks to third party websites ('outbound hyperlinks'). Outbound hyperlinks are provided for your convenience only and may not remain current or be maintained. We make no endorsement of, and accept no responsibility for, any content accessible through any outbound hyperlink. You are responsible for complying with any terms and conditions imposed by third party websites.</p>
+<p><b>17. Inbound hyperlinks</b></p>
+<p>You agree that you will not publish or distribute any hyperlinks, hotlinks, or deep-links to this website ('inbound hyperlink') without our prior written permission in each instance. If you do create an inbound hyperlink, you will be responsible for all losses (whether direct or indirect) that we may suffer as a result of that hyperlink. Publishing or distributing inbound hyperlinks is done at your own risk.</p>
+<p><b>18. Warranties</b></p>
+<p>Whilst we endeavour to ensure that the information on this website (excluding user content) is correct, we do not guarantee its correctness or completeness; nor do we commit to ensuring that the website remains available or that the material on the website is kept up-to-date. We exclude all representations, warranties and conditions relating to this website and the use of this website including, without limitation, any warranties implied by law of a satisfactory quality, fitness for purpose and/or the use of reasonable care and skill.</p>
+<p><b>19. Limitation of liability</b></p>
+<p>Nothing in these terms and conditions or elsewhere on our website shall exclude or limit our liability for fraud, for death or personal injury caused by our negligence, or for any other liability which cannot be excluded or limited under the appropriate law. Subject to this, our liability to you in relation to the use of our website or under or in association with these terms and conditions, whether in contract, tort (including negligence) or otherwise, shall be limited as follows:</p>
+<ul class="list-disc list-inside">
+    <li>to the extent that the website and the information and services on the website are provided free-of-charge, we shall not be liable for any loss or damage of any nature;</li>
+    <li>we shall not be liable for any consequential, indirect or special loss or damage;</li>
+    <li>we shall not be liable for any loss of profit, income, revenue, anticipated savings, contracts, business, reputation, data, information or goodwill;</li>
+    <li>we shall not be liable for any loss or damage occurring out of any event or events that are beyond our reasonable control;</li>
+    <li>our maximum liability in relation to any event or series of related events shall be limited to $1.</li>
+</ul>
+<p><b>20. Indemnity</b></p>
+<p>You hereby indemnify us and undertake to keep us indemnified against any losses, damages, costs, liabilities and expenses, including without limitation legal expenses and any amounts paid by us to a third party in settlement of a claim or dispute on the advice of our legal advisers, incurred or suffered by us arising out of any breach by you of any condition of these terms and conditions.</p>
+<p><b>21. Breaches of these terms and conditions</b></p>
+<p>Without prejudice to our other rights under these terms and conditions, if you breach these terms and conditions in any way, we may take such action as we deem suitable to deal with the breach, including prohibiting you from accessing the website, suspending your access to the website, blocking computers using your IP address from accessing the website, contacting your internet service provider to request that they block your access to the website and/or bringing court proceedings against you.</p>
+<p><b>22. Variation</b></p>
+<p>We may revise these terms and conditions on occasion. Such revised terms and conditions shall apply to the use of our website from the date of the publication of the revised terms and conditions on our website. To ensure you are familiar with the current version please check this page regularly.</p>
+<p><b>23. Assignment</b></p>
+<p>We may transfer, sub-contract or otherwise deal with our rights and/or obligations under these terms and conditions without notifying you or obtaining your consent. We do not permit you to transfer, sub-contract or otherwise deal with your rights and/or obligations under these terms and conditions.</p>
+<p><b>24. Severability</b></p>
+<p>If a provision of these terms and conditions is determined by any court or other competent authority to be unlawful and/or unenforceable, the other provisions shall continue in effect. If any unlawful and/or unenforceable provision would be lawful or enforceable if part of it were deleted, that part shall be deemed to be deleted, and the rest of the provision shall continue in effect.</p>
+<p><b>25. Exclusion of third party rights</b></p>
+<p>These terms and conditions are for the benefit of you and us, and are not intended to benefit any third party or be enforceable by any third party. The exercise of our and your rights in connection to these terms and conditions is not to be subject to the consent of any third party whatsoever.</p>
+<p><b>26. Entire agreement</b></p>
+<p>These terms and conditions, together with our privacy policy, constitute the entire agreement between you and us in regard to your use of our website, and supersede all prior agreements in respect of your use of this website.</p>
+<p><b>27. Law and jurisdiction</b></p>
+<p>Any relevant terms and conditions, policies and notices shall be governed by and construed in accordance with the laws of Cyprus without giving effect to any principles of conflict of law. You hereby consent to the exclusive jurisdiction of the High Court of Cyprus in respect of any disputes arising in connection with the website, or any relevant terms and conditions, policies and notices or any matter related to or in connection therewith.</p>
+<p><b>28. Contact Us</b></p>
+<p>
+    If you have any questions about the Agreement or about the practices of Markenark please feel free to contact us at:
+    <br>
+    Address: Address goes here...
+    <br>
+    Online Support: <a href="#">Click Here</a>
+    <br>
+    Phone Support: Phone number here...
+</p>
+                </div>
+                <div class="modal__footer">
+                    <button x-on:click="$store.app.closeModal('tc')" class="btn btn--primary">
+                        <p>Close</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+    <!--[if ENDBLOCK]><![endif]-->
+</section>
+</div>
+
+        <!--[if ENDBLOCK]><![endif]-->
+</div>
+
+        </main>
+
+    <script async>
+        var laravelTelInputConfig = {"allowDropdown":true,"autoHideDialCode":true,"autoPlaceholder":"polite","customContainer":"","customPlaceholder":null,"dropdownContainer":null,"excludeCountries":[],"formatOnDisplay":true,"geoIpLookup":null,"initialCountry":"BR","localizedCountries":[],"nationalMode":true,"onlyCountries":["US","CA"],"placeholderNumberType":"FIXED_LINE_OR_MOBILE","preferredCountries":["US"],"separateDialCode":true,"utilsScript":"https:\/\/cdn.jsdelivr.net\/npm\/intl-tel-input@23.1.0\/build\/js\/utils.js","validationNumberType":null,"strictMode":true};
+        (()=>{var e,t={166:()=>{!function(){"use strict";function e(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:null,o=arguments.length>3&&void 0!==arguments[3]?arguments[3]:null,i=arguments.length>4&&void 0!==arguments[4]?arguments[4]:null,a="".concat(e,"=").concat(t,";");if(n){var r=new Date;r.setTime(r.getTime()+24*n*60*60*1e3),a+="expires=".concat(r.toUTCString(),";")}o&&(a+="path=".concat(o,";")),i&&(a+="domain=".concat(i,";")),document.cookie=a}function t(e){for(var t=e+"=",n=document.cookie.split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return""}function n(n){var o=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},i="IntlTelInputSelectedCountry_".concat(n.dataset.phoneInputId);window.intlTelInputGlobals.autoCountry=t(i)||window.intlTelInputGlobals.autoCountry;var a=n.closest("form");if(a&&a.setAttribute("autocomplete","off"),null==o.geoIpLookup)delete o.geoIpLookup;else if("ipinfo"===o.geoIpLookup)o.geoIpLookup=function(n,o){var a=t(i);a?n(a):fetch("https://ipinfo.io/json").then((function(e){return e.json()})).then((function(e){return e})).then((function(t){var o,a=null===(o=t.country)||void 0===o?void 0:o.toUpperCase();n(a),e(i,a)})).catch((function(e){return n("US")}))};else if("function"==typeof window[o.geoIpLookup])o.geoIpLookup=window[o.geoIpLookup];else{if("function"!=typeof o.geoIpLookup)throw new TypeError("Laravel-Tel-Input: Undefined function '".concat(o.geoIpLookup,"' specified in tel-input.options.geoIpLookup."));delete o.geoIpLookup}if(null==o.customPlaceholder)delete o.customPlaceholder;else if("function"==typeof window[o.customPlaceholder])o.customPlaceholder=window[o.customPlaceholder];else{if("function"!=typeof o.customPlaceholder)throw new TypeError("Laravel-Tel-Input: Undefined function '".concat(o.customPlaceholder,"' specified in tel-input.options.customPlaceholder."));delete o.customPlaceholder}o.utilsScript&&(o.utilsScript="/"==o.utilsScript.charAt(0)?o.utilsScript:"/"+o.utilsScript);var r=window.intlTelInput(n,o),u=function(){var t=r.getSelectedCountryData();if(t.iso2){var o;if(e(i,null===(o=t.iso2)||void 0===o?void 0:o.toUpperCase()),this.dataset.phoneCountryInput&&t.iso2){var a=document.querySelector(this.dataset.phoneCountryInput);if(a){var u,l,c=null===(u=a.value)||void 0===u?void 0:u.trim();a.value=null===(l=t.iso2)||void 0===l?void 0:l.toUpperCase(),a.value===c&&""==a.value||a.dispatchEvent(new KeyboardEvent("change"))}}if(this.dataset.phoneDialCodeInput&&t.dialCode){var d=document.querySelector(this.dataset.phoneDialCodeInput);if(d){var v=d.value;d.value=t.dialCode,d.value===v&&""==d.value||d.dispatchEvent(new KeyboardEvent("change"))}}n.dispatchEvent(new KeyboardEvent("change"))}},l=function(){if(this.dataset.phoneInput){var e=document.querySelector(this.dataset.phoneInput);if(e){var t,n,o,i,a=null===(t=e.value)||void 0===t?void 0:t.trim();if(""!=a&&"+"!=a.charAt(0)&&"0"!=a.charAt(0)&&null===r.isValidNumber()&&(a="+".concat(a),e.value=a),""!=(null===(n=r.getNumber())||void 0===n?void 0:n.trim())?r.isValidNumber()?e.value=r.getNumber():e.value="":""!=a&&null===r.isValidNumber()&&(r.setNumber(a),e.value=r.getNumber()),e.value===a||""==e.value||!0!==r.isValidNumber()&&null!==r.isValidNumber()){if(!1===r.isValidNumber())e.dispatchEvent(new KeyboardEvent("change")),e.dispatchEvent(new KeyboardEvent("input")),e.dispatchEvent(new CustomEvent("telchange",{detail:{valid:!1,validNumber:e.value,number:r.getNumber(),country:null===(o=r.getSelectedCountryData().iso2)||void 0===o?void 0:o.toUpperCase(),countryName:r.getSelectedCountryData().name,dialCode:r.getSelectedCountryData().dialCode}}))}else e.dispatchEvent(new KeyboardEvent("change")),e.dispatchEvent(new KeyboardEvent("input")),e.dispatchEvent(new CustomEvent("telchange",{detail:{valid:!0,validNumber:e.value,number:r.getNumber(),country:null===(i=r.getSelectedCountryData().iso2)||void 0===i?void 0:i.toUpperCase(),countryName:r.getSelectedCountryData().name,dialCode:r.getSelectedCountryData().dialCode}}))}}};if(n.removeEventListener("countrychange",u),n.addEventListener("countrychange",u),n.removeEventListener("change",l),n.addEventListener("change",l),n.dataset.phoneInput){var c=document.querySelector(n.dataset.phoneInput);if(c){var d,v=null===(d=c.value)||void 0===d?void 0:d.trim();""!=v&&"+"!=v.charAt(0)&&"0"!=v.charAt(0)&&(v="+".concat(v));var s=function(){var e,t=null===(e=this.value)||void 0===e?void 0:e.trim();t!=v&&""!=t&&r.setNumber(t)};c.removeEventListener("change",s),c.addEventListener("change",s)}}if(n.dataset.phoneCountryInput){var p=document.querySelector(n.dataset.phoneCountryInput);if(p){var h=function(){var e;r.setCountry(null===(e=this.value)||void 0===e?void 0:e.trim())};p.removeEventListener("change",h),p.addEventListener("change",h)}}n.dispatchEvent(new KeyboardEvent("countrychange")),document.addEventListener("turbolinks:load",(function(){n&&n.dispatchEvent(new KeyboardEvent("countrychange"))})),document.addEventListener("turbo:load",(function(){n&&n.dispatchEvent(new KeyboardEvent("countrychange"))}))}function o(){if("function"!=typeof window.intlTelInput)throw new TypeError("Laravel-Tel-Input: requires International Telephone Input (https://github.com/jackocnr/intl-tel-input). Please install with NPM or include the CDN.");var e=laravelTelInputConfig,t=document.querySelectorAll(".iti--laravel-tel-input");if(t.length>0)for(var o=0;o<t.length;o++)n(t[o],e)}document.addEventListener("DOMContentLoaded",(function(){setTimeout((function(){o()}),5),document.addEventListener("telDOMChanged",(function(){setTimeout((function(){o()}),5)})),window.Livewire&&window.Livewire.hook("component.initialized",(function(e){setTimeout((function(){o()}),5)}))}))}()},76:()=>{}},n={};function o(e){var i=n[e];if(void 0!==i)return i.exports;var a=n[e]={exports:{}};return t[e](a,a.exports,o),a.exports}o.m=t,e=[],o.O=(t,n,i,a)=>{if(!n){var r=1/0;for(d=0;d<e.length;d++){for(var[n,i,a]=e[d],u=!0,l=0;l<n.length;l++)(!1&a||r>=a)&&Object.keys(o.O).every((e=>o.O[e](n[l])))?n.splice(l--,1):(u=!1,a<r&&(r=a));if(u){e.splice(d--,1);var c=i();void 0!==c&&(t=c)}}return t}a=a||0;for(var d=e.length;d>0&&e[d-1][2]>a;d--)e[d]=e[d-1];e[d]=[n,i,a]},o.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{var e={237:0,960:0};o.O.j=t=>0===e[t];var t=(t,n)=>{var i,a,[r,u,l]=n,c=0;for(i in u)o.o(u,i)&&(o.m[i]=u[i]);if(l)var d=l(o);for(t&&t(n);c<r.length;c++)a=r[c],o.o(e,a)&&e[a]&&e[a][0](),e[r[c]]=0;return o.O(d)},n=self.webpackChunk=self.webpackChunk||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),o.O(void 0,[960],(()=>o(166)));var i=o.O(void 0,[960],(()=>o(76)));i=o.O(i)})();
+    </script>
+  
+<script src="/livewire/livewire.min.js?id=c4fc8c5d"   data-csrf="ikWNN3RvYDoQ59K8oFyiQvqcIi19KvH35P2X9YCm" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+</body>
+</html>
